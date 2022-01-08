@@ -1,0 +1,59 @@
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.063rem;
+  border: 1px solid $main;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  transition: all 1s;
+}
+.btn-main {
+  background-color: $main;
+  color: #fff;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #fff;
+    border-left: 15px solid transparent;
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    background-color: darken($main, 10%);
+    &:after {
+      border-bottom: 0px solid #fff;
+      border-left: 0px solid transparent;
+    }
+  }
+  &:focus {
+    background-color: darken($main, 1%);
+  }
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-big {
+  padding: 15px 25px;
+}
+
+.inb-button.aligncenter {
+  .button-wraper {
+    text-align: center;
+  }
+}
+
+.inb-button.alignright {
+  .button-wraper {
+    text-align: right;
+  }
+}

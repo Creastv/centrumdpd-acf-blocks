@@ -1,0 +1,89 @@
+.wp-block {
+  clear: both;
+}
+.acf-block-body {
+  border: 1px solid antiquewhite;
+  padding: 10px;
+  display: block;
+  clear: both;
+}
+div[data-align="center"],
+div[data-align="right"] {
+  max-width: 840px;
+  margin: 28px auto;
+  clear: both;
+  height: initial;
+}
+
+.wp-block[data-align="right"] > * {
+  float: right;
+  margin-left: 2em /*!rtl:end:ignore*/;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.alignright {
+  float: none;
+}
+
+/* contact-info */
+.inb-contact-info {
+  margin-bottom: 10px;
+}
+
+.inb-contact-info h3 {
+  margin-bottom: 0px;
+  font-size: 1.6rem;
+}
+
+.inb-contact-info span {
+  color: #54565b;
+  font-size: 1rem;
+}
+
+.inb-contact-info .contacts {
+  list-style: none;
+  padding: 0;
+}
+
+.inb-contact-info .contacts li {
+  margin-bottom: 10px;
+}
+/* sepaator */
+.block-library-spacer__resize-container {
+  background: rgba(0, 0, 0, 0.05);
+}
+/* Buttons */
+.btn {
+  border: 1px solid #00aa13;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.2rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.btn-main {
+  background-color: #00aa13;
+  color: #fff;
+}
+
+.btn-main:hover {
+  background-color: #00770d;
+}
+
+.btn-main:focus {
+  background-color: #00a512;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.btn-big {
+  padding: 15px 25px;
+}

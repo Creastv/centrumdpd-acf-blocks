@@ -1,0 +1,124 @@
+.inb-person {
+  padding: 0 0 1.25rem 0;
+  //   max-width: 1200px;
+  margin: 0 auto;
+  .wraper.left {
+    .inb-person_content {
+      @media #{$md} {
+        padding: 0.625rem 0 0.625rem 5%;
+      }
+    }
+    .inb-person_img {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        right: -1px;
+        width: 0;
+        height: 0;
+        border-bottom: 70px solid rgb(255, 255, 255);
+        border-left: 70px solid transparent;
+      }
+    }
+  }
+  .wraper.right {
+    .inb-person_content {
+      @media #{$md} {
+        padding: 0.625rem 5% 0.625rem 0;
+      }
+    }
+    @media #{$xs} {
+      justify-content: flex-end;
+    }
+    .inb-person_img {
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        left: -1px;
+        width: 0;
+        height: 0;
+        border-bottom: 70px solid rgb(255, 255, 255);
+        border-right: 70px solid transparent;
+      }
+    }
+    .col:nth-child(1) {
+      order: 2;
+      text-align: right;
+      margin-bottom: 0.938rem;
+    }
+    .col:nth-child(2) {
+      order: 1;
+      margin-bottom: 0.938rem;
+    }
+  }
+  .wraper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media #{$md} {
+      align-items: flex-start;
+    }
+    .col:nth-child(1) {
+      @media #{$xs} {
+        order: 1 !important;
+      }
+    }
+    .col:nth-child(2) {
+      @media #{$xs} {
+        order: 2 !important;
+      }
+    }
+    .inb-person_img {
+      width: 28.5%;
+      position: relative;
+      @media #{$xs} {
+        width: 90%;
+      }
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+
+        // width: auto;
+        // max-width: 100%;
+        // max-height: 350px;
+      }
+    }
+    .inb-person_content {
+      width: 70%;
+      padding: 1.25rem 10%;
+      // @media #{$sm} {
+      //   padding: 0.938rem;
+      // }
+      @media #{$xs} {
+        width: 100%;
+        padding: 0 !important;
+      }
+      h3 {
+        font-family: "Playfair Display", serif;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1.25rem;
+        font-size: 2.75rem;
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 5px;
+          left: 0px;
+          background-image: url(../img/title-left.svg);
+          max-width: 214px;
+          width: 120%;
+          height: 10px;
+        }
+      }
+      span {
+        font-size: 1.188rem;
+        color: $main;
+      }
+    }
+  }
+}
