@@ -15,10 +15,9 @@ if( !empty($block['className']) ) {
         $exc = get_the_excerpt($postObject->ID);
         $permalink = get_permalink( $postObject->ID );
         $title = get_the_title( $postObject->ID );
-        $custom_field = get_field( 'field_name', $postObject->ID );
         ?>
         <li>
-            <div class="item">
+            <div class="item-offert">
                 <a href="<?php echo esc_url( $permalink ); ?>">
                     <?php echo $thumb; ?>
                    <h3> <?php echo esc_html( $title ); ?></h3>

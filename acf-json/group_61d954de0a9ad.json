@@ -5,7 +5,7 @@
         {
             "key": "field_61d955018a49f",
             "label": "Title",
-            "name": "title_of-sli",
+            "name": "title_offer",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -15,11 +15,45 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Poznaj naszą ofertę",
             "placeholder": "",
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_61dc014e5f022",
+            "label": "Desc",
+            "name": "desc_offer",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem enim cupiditate aspernatur, sapiente velit nemo optio illum commodi rem officiis magnam rerum accusantium? Cum aut dolore similique eum optio numquam!",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_61dc01705f023",
+            "label": "Link",
+            "name": "link_offer",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -39,5 +73,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641633034
+    "modified": 1641808461
 }

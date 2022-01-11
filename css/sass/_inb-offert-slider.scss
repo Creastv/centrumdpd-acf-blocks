@@ -1,0 +1,145 @@
+// .offert-com {
+//   position: relative;
+//   // margin-top: 3.125rem;
+//   .offert-space {
+//     position: absolute;
+//     z-index: -1;
+//     top: 0;
+//     width: calc(100vw - 60px);
+//     height: 100%;
+//     margin-left: -50vw;
+//     left: calc(50% + 35px);
+//     @media #{$sm} {
+//       width: 100vw;
+//       left: 50%;
+//     }
+//     .offert-space__wraper {
+//       height: 100%;
+//       width: 100%;
+//       display: flex;
+//       @media #{$sm} {
+//         flex-wrap: wrap;
+//       }
+//       &:before {
+//         content: "";
+//         width: 30%;
+//         position: relative;
+//         background-color: $main-sec;
+//         height: 100%;
+//         @media #{$sm} {
+//           width: 100%;
+//         }
+//       }
+//       &:after {
+//         content: "";
+//         width: 70%;
+//         padding-left: 3.125rem;
+//         padding-top: 3.125rem;
+//         padding-right: calc((100% - 1300px) / 2);
+//         @media #{$sm} {
+//           width: 100%;
+//           padding: 1.25rem 0.938rem;
+//         }
+//       }
+//     }
+//   }
+// }
+// .offert-com__wraper {
+//   display: flex;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   .col:nth-child(1) {
+//     width: 40%;
+//     padding: 2.25rem 1.25rem 2.25rem 0;
+//     @media #{$sm} {
+//       width: 100%;
+//       padding: 1.25rem 0;
+//     }
+//   }
+//   .col:nth-child(2) {
+//     width: 60%;
+//     @media #{$sm} {
+//       width: 100%;
+//     }
+//   }
+//   .offert-com__content {
+//     .offert-com__content--title {
+//       position: relative;
+//       font-family: "Playfair Display", serif;
+//       font-size: 2.2rem;
+//       margin: 0;
+//       padding: 0;
+//       padding-bottom: 1.25rem;
+//       display: inline-block;
+//       &:after {
+//         content: "";
+//         position: absolute;
+//         bottom: 5px;
+//         left: 0px;
+//         background-image: url(../img/title-left.svg);
+//         max-width: 214px;
+//         width: 120%;
+//         height: 10px;
+//       }
+//     }
+//     .btn {
+//       @media #{$sm} {
+//         &:after {
+//           border-bottom: 15px solid $main-sec;
+//         }
+//       }
+//     }
+//     p {
+//       margin-bottom: 1.25rem;
+//     }
+//   }
+//   .offert-com-slider {
+//     .offert {
+//       padding-top: 3.125rem;
+//       .swiper-slide {
+//         align-self: center;
+//       }
+//     }
+//   }
+// }
+
+// .arrows {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   .swiper-button-next {
+//     margin-top: 0;
+//     right: 0px;
+//     top: 0;
+//     left: auto;
+//     background-color: $main-sec;
+//     transition: all 0.3s;
+//     &:hover {
+//       background-color: $main-tir;
+//       &:after {
+//         color: #fff;
+//       }
+//     }
+//     &:after {
+//       font-size: 14px;
+//       color: $main;
+//     }
+//   }
+//   .swiper-button-prev {
+//     background-color: $main;
+//     left: initial;
+//     right: 27px;
+//     margin-top: 0;
+//     transition: all 0.3s;
+//     &:hover {
+//       background-color: $main-tir;
+//       &:after {
+//         color: #fff;
+//       }
+//     }
+//     &:after {
+//       font-size: 14px;
+//       color: #fff;
+//     }
+//   }
+// }

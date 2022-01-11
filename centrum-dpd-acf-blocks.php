@@ -66,3 +66,9 @@ function inb_add_async_defer_attributes( $tag, $handle ) {
 	return $tag;
 }
 add_filter('script_loader_tag', 'inb_add_async_defer_attributes', 10, 2);
+
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyCIXFTZ5TWh5sJutqQeoiXH3aNRScmIxBw');
+}
+add_action('acf/init', 'my_acf_init');

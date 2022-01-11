@@ -1,12 +1,12 @@
 {
-    "key": "group_61b8580346f22",
-    "title": "Block - Contact info",
+    "key": "group_61dc31fe8b7fd",
+    "title": "Block - Map",
     "fields": [
         {
-            "key": "field_61dc4bb2061d3",
-            "label": "Person",
-            "name": "person",
-            "type": "post_object",
+            "key": "field_61dc321ea7189",
+            "label": "Map",
+            "name": "map",
+            "type": "google_map",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,14 +15,10 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "zespol"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
+            "center_lat": "",
+            "center_lng": "",
+            "zoom": 12,
+            "height": ""
         }
     ],
     "location": [
@@ -30,7 +26,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/inb-contact"
+                "value": "acf\/inb-map"
             }
         ]
     ],
@@ -42,5 +38,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641832921
+    "modified": 1641820718
 }
