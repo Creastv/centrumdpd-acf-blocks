@@ -39,16 +39,16 @@ $posts = new WP_Query( array(
                   <?php the_post_thumbnail(); ?>
                   <div class="entry-data mobile">
                      <div class="wraper-data">
-                        <span>30</span>
-                        <small>sty 2022</small>
+                        <span><?php echo get_the_date('d') ?></span>
+                        <small><?php echo get_the_date('M Y') ?></small>
                      </div>
                   </div>
                </a>
                <div class="flex-col">
                   <div class="entry-data desktop">
                      <div class="wraper-data">
-                        <span>30</span>
-                        <small>sty 2022</small>
+                       <span><?php echo get_the_date('d') ?></span>
+                       <small><?php echo get_the_date('M Y') ?></small>
                      </div>
                   </div>
                   <div class="entry-info">

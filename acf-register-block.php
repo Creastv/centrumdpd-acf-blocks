@@ -16,9 +16,10 @@ function inb_blocks() {
             'category'        => 'inb-category',
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-full-section.php',
             'icon'            => '<svg xml:space="preserve" viewBox="0 0 38 38"><path fill="#3b95d2" d="M28.1 14c0-2.3-1.7-4.1-4.1-4.2H14c-1.5 0-2.8.7-3.5 2.1-1.4 2.5-.2 5.3 2.7 6.1.6.2.6.3.2.7-.8.7-1.5 1.5-2.3 2.3-.9.9-1.4 2-1.2 3.3.2 1.7 1.1 2.9 2.7 3.5 1.7.6 3.2.2 4.4-1.1.7-.7 1.4-1.4 2.2-2.1.2-.2.3-.4.6-.4.3.1.2.4.3.6.5 2.2 2.4 3.4 4.7 3.1 1.9-.2 3.4-2 3.4-4.1v-4.9c-.1-1.6-.1-3.2-.1-4.9zm-2.5 9.8c0 1.1-.6 1.7-1.5 1.7-1 0-1.7-.6-1.7-1.6-.1-1.6 0-3.2 0-4.8 0-.3.1-.6-.1-.8-.3 0-.5.3-.7.5l-6.3 6.3c-.5.5-1 .7-1.7.5-.6-.2-1-.6-1.1-1.3-.2-.7.2-1.2.7-1.7l6.2-6.2c.2-.2.5-.3.5-.8h-5.6c-1.1 0-1.7-.6-1.7-1.5 0-1 .7-1.8 1.7-1.8h9.8c1.1 0 1.7.7 1.7 1.7-.2 3.3-.2 6.6-.2 9.8z" class="st0"/><path fill="#3b95d2" d="M19 38C8.5 38 0 29.4 0 19S8.5 0 19 0s19 8.5 19 19-8.5 19-19 19zm0-35.8C9.7 2.2 2.2 9.7 2.2 19S9.7 35.8 19 35.8 35.8 28.2 35.8 19 28.3 2.2 19 2.2z" class="st0"/></svg>',
-             'supports'		=> array(
+             'mode'	=> 'edit',
+            'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => true
             ),
             'enqueue_assets'  => function(){
@@ -54,6 +55,12 @@ function inb_blocks() {
             'title'           => __('Offert - grid'),
             'category'        => 'inb-category',
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-offert-grid.php',
+            'mode'	=> 'edit',
+            'supports'		=> array(
+              'align' => false,
+              'mode'  => false,
+              'jsx'   => false
+            ),
             'icon'            => '<svg xml:space="preserve" viewBox="0 0 38 38"><path fill="#3b95d2" d="M28.1 14c0-2.3-1.7-4.1-4.1-4.2H14c-1.5 0-2.8.7-3.5 2.1-1.4 2.5-.2 5.3 2.7 6.1.6.2.6.3.2.7-.8.7-1.5 1.5-2.3 2.3-.9.9-1.4 2-1.2 3.3.2 1.7 1.1 2.9 2.7 3.5 1.7.6 3.2.2 4.4-1.1.7-.7 1.4-1.4 2.2-2.1.2-.2.3-.4.6-.4.3.1.2.4.3.6.5 2.2 2.4 3.4 4.7 3.1 1.9-.2 3.4-2 3.4-4.1v-4.9c-.1-1.6-.1-3.2-.1-4.9zm-2.5 9.8c0 1.1-.6 1.7-1.5 1.7-1 0-1.7-.6-1.7-1.6-.1-1.6 0-3.2 0-4.8 0-.3.1-.6-.1-.8-.3 0-.5.3-.7.5l-6.3 6.3c-.5.5-1 .7-1.7.5-.6-.2-1-.6-1.1-1.3-.2-.7.2-1.2.7-1.7l6.2-6.2c.2-.2.5-.3.5-.8h-5.6c-1.1 0-1.7-.6-1.7-1.5 0-1 .7-1.8 1.7-1.8h9.8c1.1 0 1.7.7 1.7 1.7-.2 3.3-.2 6.6-.2 9.8z" class="st0"/><path fill="#3b95d2" d="M19 38C8.5 38 0 29.4 0 19S8.5 0 19 0s19 8.5 19 19-8.5 19-19 19zm0-35.8C9.7 2.2 2.2 9.7 2.2 19S9.7 35.8 19 35.8 35.8 28.2 35.8 19 28.3 2.2 19 2.2z" class="st0"/></svg>',
             'enqueue_assets'  => function(){
               wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
@@ -65,9 +72,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Personal contact info'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => false
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-contact-info.php',
@@ -82,9 +90,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Company contact info'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => false
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-company-contact-info.php',
@@ -99,9 +108,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Background'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => true
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-background.php',
@@ -115,9 +125,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Button'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => true,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => false
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-button.php',
@@ -131,9 +142,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('About us'),
             'category'    => 'inb-category',
+            'mode'	=> 'preview',
             'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => true
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-about-us.php',
@@ -147,6 +159,7 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Display posts'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
               'mode'  => true,
@@ -164,12 +177,31 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Reference'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
               'mode'  => true,
               'jsx'   => false
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-reference.php',
+            'icon'            => '<svg xml:space="preserve" viewBox="0 0 38 38"><path fill="#3b95d2" d="M28.1 14c0-2.3-1.7-4.1-4.1-4.2H14c-1.5 0-2.8.7-3.5 2.1-1.4 2.5-.2 5.3 2.7 6.1.6.2.6.3.2.7-.8.7-1.5 1.5-2.3 2.3-.9.9-1.4 2-1.2 3.3.2 1.7 1.1 2.9 2.7 3.5 1.7.6 3.2.2 4.4-1.1.7-.7 1.4-1.4 2.2-2.1.2-.2.3-.4.6-.4.3.1.2.4.3.6.5 2.2 2.4 3.4 4.7 3.1 1.9-.2 3.4-2 3.4-4.1v-4.9c-.1-1.6-.1-3.2-.1-4.9zm-2.5 9.8c0 1.1-.6 1.7-1.5 1.7-1 0-1.7-.6-1.7-1.6-.1-1.6 0-3.2 0-4.8 0-.3.1-.6-.1-.8-.3 0-.5.3-.7.5l-6.3 6.3c-.5.5-1 .7-1.7.5-.6-.2-1-.6-1.1-1.3-.2-.7.2-1.2.7-1.7l6.2-6.2c.2-.2.5-.3.5-.8h-5.6c-1.1 0-1.7-.6-1.7-1.5 0-1 .7-1.8 1.7-1.8h9.8c1.1 0 1.7.7 1.7 1.7-.2 3.3-.2 6.6-.2 9.8z" class="st0"/><path fill="#3b95d2" d="M19 38C8.5 38 0 29.4 0 19S8.5 0 19 0s19 8.5 19 19-8.5 19-19 19zm0-35.8C9.7 2.2 2.2 9.7 2.2 19S9.7 35.8 19 35.8 35.8 28.2 35.8 19 28.3 2.2 19 2.2z" class="st0"/></svg>',
+            'enqueue_assets'  => function(){
+              wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
+            },
+        ));
+
+         acf_register_block_type(array(
+            'name'        => 'inb-hero',
+            'mode'				=> 'eddit',
+            'title'       => __('Hero section'),
+            'category'    => 'inb-category',
+            'mode'	=> 'edit',
+            'supports'		=> array(
+              'align' => false,
+              'mode'  => true,
+              'jsx'   => true
+            ),
+            'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-hero.php',
             'icon'            => '<svg xml:space="preserve" viewBox="0 0 38 38"><path fill="#3b95d2" d="M28.1 14c0-2.3-1.7-4.1-4.1-4.2H14c-1.5 0-2.8.7-3.5 2.1-1.4 2.5-.2 5.3 2.7 6.1.6.2.6.3.2.7-.8.7-1.5 1.5-2.3 2.3-.9.9-1.4 2-1.2 3.3.2 1.7 1.1 2.9 2.7 3.5 1.7.6 3.2.2 4.4-1.1.7-.7 1.4-1.4 2.2-2.1.2-.2.3-.4.6-.4.3.1.2.4.3.6.5 2.2 2.4 3.4 4.7 3.1 1.9-.2 3.4-2 3.4-4.1v-4.9c-.1-1.6-.1-3.2-.1-4.9zm-2.5 9.8c0 1.1-.6 1.7-1.5 1.7-1 0-1.7-.6-1.7-1.6-.1-1.6 0-3.2 0-4.8 0-.3.1-.6-.1-.8-.3 0-.5.3-.7.5l-6.3 6.3c-.5.5-1 .7-1.7.5-.6-.2-1-.6-1.1-1.3-.2-.7.2-1.2.7-1.7l6.2-6.2c.2-.2.5-.3.5-.8h-5.6c-1.1 0-1.7-.6-1.7-1.5 0-1 .7-1.8 1.7-1.8h9.8c1.1 0 1.7.7 1.7 1.7-.2 3.3-.2 6.6-.2 9.8z" class="st0"/><path fill="#3b95d2" d="M19 38C8.5 38 0 29.4 0 19S8.5 0 19 0s19 8.5 19 19-8.5 19-19 19zm0-35.8C9.7 2.2 2.2 9.7 2.2 19S9.7 35.8 19 35.8 35.8 28.2 35.8 19 28.3 2.2 19 2.2z" class="st0"/></svg>',
             'enqueue_assets'  => function(){
               wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
@@ -183,6 +215,12 @@ function inb_blocks() {
           'render_template'   => plugin_dir_path(__FILE__) . 'acf-templates/inb-offert-slider.php',
           'category'          => 'inb-category',
           'icon'              => '<svg xml:space="preserve" viewBox="0 0 38 38"><path fill="#3b95d2" d="M28.1 14c0-2.3-1.7-4.1-4.1-4.2H14c-1.5 0-2.8.7-3.5 2.1-1.4 2.5-.2 5.3 2.7 6.1.6.2.6.3.2.7-.8.7-1.5 1.5-2.3 2.3-.9.9-1.4 2-1.2 3.3.2 1.7 1.1 2.9 2.7 3.5 1.7.6 3.2.2 4.4-1.1.7-.7 1.4-1.4 2.2-2.1.2-.2.3-.4.6-.4.3.1.2.4.3.6.5 2.2 2.4 3.4 4.7 3.1 1.9-.2 3.4-2 3.4-4.1v-4.9c-.1-1.6-.1-3.2-.1-4.9zm-2.5 9.8c0 1.1-.6 1.7-1.5 1.7-1 0-1.7-.6-1.7-1.6-.1-1.6 0-3.2 0-4.8 0-.3.1-.6-.1-.8-.3 0-.5.3-.7.5l-6.3 6.3c-.5.5-1 .7-1.7.5-.6-.2-1-.6-1.1-1.3-.2-.7.2-1.2.7-1.7l6.2-6.2c.2-.2.5-.3.5-.8h-5.6c-1.1 0-1.7-.6-1.7-1.5 0-1 .7-1.8 1.7-1.8h9.8c1.1 0 1.7.7 1.7 1.7-.2 3.3-.2 6.6-.2 9.8z" class="st0"/><path fill="#3b95d2" d="M19 38C8.5 38 0 29.4 0 19S8.5 0 19 0s19 8.5 19 19-8.5 19-19 19zm0-35.8C9.7 2.2 2.2 9.7 2.2 19S9.7 35.8 19 35.8 35.8 28.2 35.8 19 28.3 2.2 19 2.2z" class="st0"/></svg>',
+           'mode'	=> 'edit',
+            'supports'		=> array(
+              'align' => false,
+              'mode'  => false,
+              'jsx'   => false
+            ),
           'enqueue_assets' => function(){
             if(!is_admin() ) {
               wp_enqueue_style( 'inb-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf-blocks.min.css' );
@@ -202,9 +240,10 @@ function inb_blocks() {
             'mode'				=> 'preview',
             'title'       => __('Map'),
             'category'    => 'inb-category',
+            'mode'	=> 'edit',
             'supports'		=> array(
               'align' => false,
-              'mode'  => true,
+              'mode'  => false,
               'jsx'   => false
             ),
             'render_template' => plugin_dir_path(__FILE__) . 'acf-templates/inb-map.php',

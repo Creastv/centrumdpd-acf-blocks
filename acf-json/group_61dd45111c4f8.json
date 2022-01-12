@@ -1,12 +1,12 @@
 {
-    "key": "group_61d8191d1120d",
-    "title": "Bock - Offert grid",
+    "key": "group_61dd45111c4f8",
+    "title": "Block - hero",
     "fields": [
         {
-            "key": "field_61d819eff46be",
-            "label": "Offerts",
-            "name": "offerts",
-            "type": "post_object",
+            "key": "field_61dd452161bb4",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,14 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "post_type": [
-                "oferta"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "multiple": 1,
-            "return_format": "object",
-            "ui": 1
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -30,7 +32,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/inb-offert"
+                "value": "acf\/inb-hero"
             }
         ]
     ],
@@ -42,5 +44,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1641913194
+    "modified": 1641891477
 }

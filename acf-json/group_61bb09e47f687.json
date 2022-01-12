@@ -1,12 +1,12 @@
 {
     "key": "group_61bb09e47f687",
-    "title": "inb block - About us",
+    "title": "Block - About us",
     "fields": [
         {
-            "key": "field_61bb0a00d7bc5",
-            "label": "Gallery",
-            "name": "galery",
-            "type": "gallery",
+            "key": "field_61dd3873618e1",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -17,10 +17,7 @@
             },
             "return_format": "id",
             "preview_size": "medium",
-            "insert": "append",
             "library": "all",
-            "min": 3,
-            "max": 3,
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -47,5 +44,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1639668757
+    "modified": 1641887887
 }

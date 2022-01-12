@@ -19,7 +19,7 @@ if( !empty($block['className']) ) {
 }
 
 ?>
-<section id="<?php echo $uid; ?>" class=" <?php echo esc_attr($className); ?>" >
+<section id="<?php echo $id; ?>" class=" <?php echo esc_attr($className); ?>" >
     <div class="ref-com__wraper">
         <div class="col">
             <div class="ref-com__content">
